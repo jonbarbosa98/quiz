@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge"/>
+	<meta name="viewpor" content="width=device-width, initial-scale=1"/>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="bar-action"></div>
+	<div class="info-box active">
+		<div class="header-start">
+			<h2>Start questionnaire!</h2>
+		</div>
+		<div class="info-question">
+			<table border="0" class="info-table">
+				<tr>
+					<td class="td-title">1º</td>
+					<td class="td-explication">After completing the above time, the quiz will show the correct answer and you will no longer be able to select!</td>
+				</tr>
+				<tr>
+					<td class="td-title">2º</td>
+					<td class="td-explication">Think carefully before answering the question, once selected, time stops and you can no longer change the answer!</td>
+				</tr>
+				<tr>
+					<td class="td-title">3º</td>
+					<td class="td-explication">If you want to finish the quiz, press the Exit button, you will return to this homepage. On the next button you can continue the quiz.</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn-initial">
+			<a class="btn-start" href="javascript:;" onclick="start()">Start</a>
+		</div>
+	</div>
+	<div class="info-box">
+		<div class="header-quiz">
+			<div class="question"></div>
+			<div class="time-out">0</div>	
+		</div>
+		<div class="options"></div>
+		<div class="btns">
+			<button id="exit" class="btn red" onclick="exit();">Exit</button>
+			<button id="next" class="btn blue" onclick="next();">Next</button>
+		</div>
+	</div>
+	<div class="info-box">
+		<div class="header-quiz">
+			<h3>Questionnaire result!</h3>
+		</div>
+		<table class="info-table" border="0">
+			<tr>
+				<th>Total</th>
+				<th>Right</th>
+				<th>% - right</th>
+				<th>Errors</th>
+				<th>% - errors</th>
+			</tr>
+			<tr>
+				<td class="total"></td>
+				<td class="right"></td>
+				<td class="porcent-right"></td>
+				<td class="errors"></td>
+				<td class="porcent-errors"></td>
+			</tr>
+		</table>
+		<div class="btns">
+			<button id="exit" class="btn red" onclick="exit();">Exit</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/questions.js"></script>
+</body>
+</html>

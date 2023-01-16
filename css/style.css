@@ -1,0 +1,229 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Courier Prime', monospace;
+}
+body{
+	background-color: #3e3e3e;
+	display: flex;
+	justify-content: center;
+	/*padding-top: 50px;
+	padding-bottom: 50px;*/
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	overflow-y: auto;
+}
+.bar-action{
+	position: absolute;
+	background-color: #3dd53d;
+	width: 0%;
+	height: 6px;
+	top: 0;
+	left: 0;
+}
+.info-box{	
+	width: 100%;
+	max-width: 600px;
+	padding: 10px;
+	display: none;
+}
+.info-box.active{
+	display: block;
+}
+.header-start{
+	background-color: #282828;
+	padding: 20px;
+	box-shadow: 0px 0px 8px #161616;
+	border: 1px solid #242424;
+	border-radius: 15px 15px 0 0;
+}
+.info-question{
+	margin-top: 20px;
+	background-color: #282828;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+.info-question .td-title{
+	color: #fff;
+	font-weight: bold;
+	background-color: #000;
+	border: 1px solid #fff;
+}
+.info-question .td-title,
+.info-question .td-explication{
+	padding: 10px;
+}
+.info-question .td-explication{
+	background-color: #91e4fd;
+	padding: 0 10px;
+	text-align: justify;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+}
+.info-box h2{
+	color: #eee;
+	text-align: center;
+}
+.btn-start{
+	color: #686868;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 20px;
+	background-color: #242424;
+	margin-top: 20px;
+	border-radius: 5px;
+	transition: all ease 0.5s;
+}
+.btn-start:hover {
+	box-shadow: 0 0 10px #000000, 0 0 40px #202020, 0 0 80px #282828;
+	transition: all ease 0.5s;
+}
+.btn-initial{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.header-quiz{
+	padding: 20px 10px;
+	background-color: #282828;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 0px 8px #161616;
+	border: 1px solid #242424;
+}
+.time-out{
+	color: #fff;
+	font-weight: bold;
+	background-color: #000;
+	padding: 5px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.question{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	margin-right: 10px;
+	background-color: #fff;
+	padding: 5px 10px;
+}
+.time-out,
+.question{
+	font-size: 17px;
+}
+.options{
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.option{
+	display: flex;
+	position: relative;
+	margin-top: 15px;
+	background-color: #242424;
+	padding: 5px;
+	border-radius: 7px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px #161616;
+	border: 1px solid #242424;
+}
+.option .n-id{
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #242424;
+	font-weight: bold;
+}
+.option .text-answer{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #c0dcff;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.option.error{
+	background-color: #ff5454;
+}
+.option.error .text-answer{
+	background-color: #ffbaba;
+}
+.option.success{
+	background-color: #168716;
+}
+.option.success .text-answer{
+	background-color: #5be75b;
+}
+.btns{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 30px;	
+}
+.btn{
+	cursor: pointer;
+	padding: 17px 30px;
+	border: 2px solid #2a2727;
+	border-radius: 5px;
+	font-weight: bold;
+	outline: none;
+}
+.btn.red{
+	background-color: #d76c6c;
+	border: 2px solid #7e3939;
+}	
+.btn.blue{
+	background-color: #4297b7;
+	border: 2px solid #024f6c;
+}
+h3{
+	color: #fff;
+}
+.info-table{
+ 	padding:10px;
+ 	display: flex;
+ 	justify-content: center;
+}
+.info-table tr th,
+.info-table tr td{
+	padding: 15px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.info-table tr th{
+	background-color: #68baff;
+}
+.info-table tr .total{
+	background-color: #fff;
+}
+.info-table tr .right{
+	background-color: #6be16b;
+}
+.info-table tr .porcent-right{
+	background-color: #319931;
+}
+.info-table tr .errors{
+	background-color: #dd6060;
+}
+.info-table tr .porcent-errors{
+	background-color: #bf3636;
+}
+
+
+
